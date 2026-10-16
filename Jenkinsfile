@@ -24,5 +24,10 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Docker Build') {
+            steps {
+                sh 'docker build -t ganeshlakhe01/java-app:${BUILD_NUMBER} .'
+            }
+}
     }
 }
