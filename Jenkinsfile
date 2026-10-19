@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = ganeshlakhe01/my-spring-app-1910
+        DOCKER_IMAGE = 'ganeshlakhe01/my-spring-app-1910'
     }
 
     stages {
